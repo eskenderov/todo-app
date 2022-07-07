@@ -27,12 +27,12 @@ const App = () => {
   return (
     <main>
       <Header />
-      <form onSubmit={handleSubmit} className='form'>
+      <form onSubmit={handleSubmit} className="form">
         <input
-          type='text'
+          type="text"
           value={text}
           onChange={handleChange}
-          placeholder='Enter new post'
+          placeholder="Enter new post"
           style={{ fontSize: 22, padding: 10, width: 500 }}
           ref={inputRef}
         />
@@ -46,8 +46,8 @@ const App = () => {
             color: "white",
             fontWeight: 600,
           }}
-          className='btn'
-          type='submit'
+          className="btn"
+          type="submit"
         >
           Add Post
         </button>
