@@ -1,8 +1,11 @@
+import { useAppDispatch } from "hooks";
 import { useState, useEffect, useRef } from "react";
+import { setPost } from "store/features/posts/postsSlice";
 import Header from "./Header";
 import PostsList from "./PostsList";
 
 const App = () => {
+  const dispatch = useAppDispatch();
   const [text, setText] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
@@ -22,7 +25,7 @@ const App = () => {
       completed: false,
     };
 
-    console.log(post);
+    dispatch(setPost(post));
   };
   return (
     <main>

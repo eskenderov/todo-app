@@ -1,0 +1,26 @@
+.post__item {
+  background-color: rgb(68, 104, 188);
+  min-width: 400px;
+  width: max-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-top: 10px;
+
+  &-checkbox {
+    cursor: pointer;
+  }
+  &-text {
+  }
+  &-btn {
+    background-color: red;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    padding: 0 10px;
+  }
+}
