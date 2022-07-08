@@ -7,7 +7,7 @@ const PostsList: React.FC = () => {
   const { data } = useAppSelector(selectPosts);
 
   return (
-    <div className="posts__list">
+    <div className='posts__list'>
       {data.map((post) => (
         <PostItem
           id={post.id}

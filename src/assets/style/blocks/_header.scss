@@ -1,0 +1,29 @@
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    width: 200px;
+    &__item {
+        list-style: none;
+        margin-right: 22px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &-link {
+            color: white;
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover {
+                opacity: .8;
+            }
+            &.active {
+                color: rgb(221, 23, 23);
+            }
+        }
+    }
+}
